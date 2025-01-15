@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuppisTypeShooter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="difficulty-screen" class="screen" style="display: flex;">
+        <h1>Duppis Type Shooter </h1>
+        <div class="option-grid">
+            <div class="option-card" onclick="selectDifficulty('easy')">
+                <h3>Easy</h3>
+                <p>NOOB</p>
+            </div>
+            <div class="option-card" onclick="selectDifficulty('normal')">
+                <h3>Normal</h3>
+                <p>PRO</p>
+            </div>
+            <div class="option-card" onclick="selectDifficulty('hard')">
+                <h3>Hard</h3>
+                <p>HACKER</p>
+            </div>
+            <div class="option-card" onclick="selectDifficulty('expert')">
+                <h3>Expert</h3>
+                <p>GOD</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="theme-screen" class="screen">
+        <button class="back-btn" onclick="goBack()">Back</button>
+        <h1>Choose Your Theme</h1>
+        <div class="option-grid">
+            <div class="option-card" onclick="selectTheme('tech')">
+                <h3>Tech</h3>
+                <p>Programming terms</p>
+            </div>
+            <div class="option-card" onclick="selectTheme('nature')">
+                <h3>Nature</h3>
+                <p>Flora terms </p>
+            </div>
+            <div class="option-card" onclick="selectTheme('food')">
+                <h3>Food </h3>
+                <p>Culinary terms</p>
+            </div>
+            <div class="option-card" onclick="selectTheme('space')">
+                <h3>Space</h3>
+                <p>Cosmic terms</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-container" class="screen">
+        <button class="back-btn" onclick="goBack()">Back</button>
+        <div id="score">Score: 0</div>
+        <input type="text" id="input" autocomplete="off" placeholder="Type the words here...">
+        <div id="game-over">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <p>Press Space to Restart</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
